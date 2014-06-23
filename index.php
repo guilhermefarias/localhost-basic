@@ -27,58 +27,22 @@ function listFolders($dir = "/var/www/html/")
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Your Projects</title>
-    <style type="text/css">
-        body {
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-            background-color: #000;
-            color: #FF6600;
-        }
-        .content {
-            width: 800px;
-            margin: 0 auto;
-        }
+    <meta charset="UTF-8">
+    <title>Localhost</title>
 
-        .toolbar ul {
-            list-style: none;
-            padding: 0;
-            margin: 0 auto;
-        }
-        .toolbar ul li {
-            position: relative;
-            display: inline-block;
-            border: 1px solid #FFF;
-            border-collapse: collapse;
-            float: left;
-            padding: 0px;
-            margin: 0 3px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border-radius: 5px;
-            border-color: #FF6600;
-            color: #FFF;
-            width: 152px;
-        }
-        .toolbar ul li:hover, a:hover  {
-            color: #FF6600;
-            background-color: #FFF;
-        }
-        li a {
-            display: block;
-            padding: 10px;
-            margin-left: 5px;
-        }
-        a, a:active, a:visited {
-            display: block;
-            text-decoration: none;
-            color: #FFF;
-        }
-        hr {
-            border: 0;
-            height: 0;
-            border-top: 1px solid rgba(0, 0, 0, 0.1);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        }
+    <style type="text/css">
+        * {font-family: "Trebuchet MS", Helvetica, sans-serif;}
+        body {background-color: #000; color: #FF6600;}
+        .content {width: 800px; margin: 0 auto;}
+        .toolbar ul {list-style: none; padding: 0; margin: 0 auto; font-weight: bold; font-size: 13px;}
+        .toolbar ul li {position: relative; display: inline-block; border: 1px solid #FFF;
+            border-collapse: collapse; float: left; padding: 0px; margin: 3px 3px; -webkit-border-radius: 5px;
+            -moz-border-radius: 5px; border-radius: 5px; border-color: #FF6600; color: #FFF; min-width: 152px;}
+        .toolbar ul li:hover {color: #FF6600; background-color: #FFF;}
+        li a {display: block; padding: 10px; margin-left: 5px;}
+        .toolbar li a {display: block; text-decoration: none; color: #FFF;}
+        .toolbar li a:hover {color:#FF6600;}
+        hr {border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3);}
     </style>
 </head>
 <body>
