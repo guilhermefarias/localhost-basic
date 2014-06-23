@@ -7,7 +7,7 @@ function getUrl() {
   return $url;
 }
 
-function listFolders($dir = "/var/www/html/")
+function listFolders()
 {
     $result = [];
     $root = scandir(__DIR__);
