@@ -9,15 +9,15 @@ function getUrl() {
 
 function listFolders()
 {
-    $result = [];
+    $result = array();
     $root = scandir(__DIR__);
 
-    $exclude_folders = ['..','.','.git','.idea'];
+    $exclude_folders = array('..','.','.git','.idea');
 
     foreach ($root as $folder) {
         if (in_array($folder, $exclude_folders)) continue;
-        if (is_file("$dir/$folder")) continue;
-        $result[$uri.$folder] = $folder;
+        if (is_file("$root/$folder")) continue;
+        $result[$folder] = $folder;
     }
 
     return $result;
